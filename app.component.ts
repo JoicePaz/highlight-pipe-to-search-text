@@ -1,0 +1,19 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+
+  title = 'Myapp';
+  textoRecebido: string;
+
+  // tslint:disable-next-line:max-line-length
+  meuTexto = '<div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet id orci nec blandit. Mauris auctor at erat id accumsan. Maecenas tristique a velit ac semper. Ut diam libero, cursus ut nisl ut, eleifend consectetur lacus. Sed cursus orci eu fermentum pharetra. Vestibulum hendrerit, justo at mattis porta, magna nisi egestas leo, a suscipit nisl leo nec libero. In accumsan vel elit dictum lacinia. Cras et turpis lobortis, tincidunt turpis non, ultrices enim. Etiam a justo iaculis, condimentum turpis viverra, consectetur elit. Etiam tincidunt lectus id nisi rutrum, a tempor neque venenatis. In euismod hendrerit sodales. Vestibulum bibendum at augue eu consequat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet mauris id velit venenatis tempor. Suspendisse in nisi quis ante accumsan varius ac eu eros. Aenean nec urna et mauris vestibulum vulputate.</p><p>Fusce dignissim nec nulla a maximus. Aliquam eu commodo dui. Quisque quam nisl, pellentesque vel feugiat sit amet, rutrum in ex. Quisque et scelerisque metus. Morbi tempus nisl a dui facilisis, facilisis pellentesque purus tempus. Integer et arcu nec purus venenatis scelerisque. Donec ut lectus pharetra, maximus lectus et, volutpat tellus. Proin sit amet dolor viverra sapien vulputate tristique non ut neque. Pellentesque gravida, ante vestibulum tempor ultricies, dolor quam ultricies mi, et sodales ante mi eu enim. Aenean blandit convallis mauris. Suspendisse potenti. Nunc consectetur lorem eros, ac volutpat lacus semper atat.</p> <p>Praesent pretium varius iaculis. Nunc eget orci vitae nibh congue finibus quis a dolor. Praesent tempor, tortor nec tempor molestie, felis massa sagittis lectus, id eleifend turpis metus id enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras interdum gravida hendrerit. Etiam non lobortis orci. Donec in tempus ligula. Phasellus consectetur, leo eget dapibus fringilla, nibh ante laoreet metus, nec aliquam nibh nunc vel enim. Quisque mi arcu, venenatis vitae posuere et, pharetra non sem. Morbi finibus dui neque, at porttitor mi feugiat nec. Morbi nisi sapien, luctus eget gravida nec, elementum vel tellus. Aliquam sapien dui, dignissim quis feugiat nec, commodo ut diam. Proin rhoncus lorem nunc, vitae tincidunt dolor semper sit amet. Nullam finibus, arcu in efficitur interdum, velit tellus iaculis augue, sed rutrum mi ante at ante.</p> <p>Nam vehicula cursus arcu, id lobortis nisi. Nulla facilisi. Sed volutpat nulla eu velit vulputate vestibulum. Praesent eget risus consequat, elementum ante id, pellentesque velit. Mauris at orci sollicitudin, venenatis sem auctor, rhoncus velit. Cras lectus dolor, dapibus id faucibus nec, lacinia sed felis. Integer condimentum, magna fermentum iaculis ornare, mi elit interdum nulla, ac finibus tellus lacus in dolor. Cras sit amet odio fringilla, dictum nulla vel, accumsan lorem. </br>Phasellus venenatis tellus eros, vel porttitor lorem aliquam in. Praesent congue rhoncus massa. Donec interdum sodales enim, eget auctor massa semper eget. In pretium id est quis laoreet. Etiam dapibus congue risus.Phasellus orci sem, blandit vel velit ac, condimentum blandit lacus. Pellentesque finibus elementum tincidunt. Suspendisse potenti. In consequat ante massa, ac vestibulum lacus hendrerit venenatis. Phasellus at suscipit lorem, pellentesque interdum nunc. Donec tempus vitae turpis id congue. Donec egestas felis ac libero tincidunt lobortis.</p></div>';
+
+  defineTexto(texto) {
+    this.textoRecebido = texto;
+  }
+}
